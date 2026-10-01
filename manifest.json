@@ -1,0 +1,39 @@
+{
+  "name": "blog-comments",
+  "version": "1.0.0",
+  "status": "installed",
+  "error": null,
+  "displayName": "Blog Comments",
+  "description": "Comprehensive automation and standard operating procedure for niche-relevant Blogspot/Blogger blog commenting for local SEO, post analysis, bold contextual anchor backlinks, and Google Sheets tracking with weekly and yellow divider protocols.",
+  "author": "SEO GEO Specialist",
+  "category": "Local SEO & Link Building",
+  "entrypoint": "scripts/craft_comment.py",
+  "repository": "https://github.com/seogeoteam/Blog-Comments",
+  "runtime": {
+    "python": ">=3.10",
+    "powershell": ">=5.1",
+    "os": [
+      "windows",
+      "linux",
+      "darwin"
+    ]
+  },
+  "address_points": {
+    "specification": "SKILL.md",
+    "comment_crafter": "scripts/craft_comment.py",
+    "blog_searcher": "scripts/search_blogs.py",
+    "sheet_logger": "scripts/sheet_logger.ps1"
+  },
+  "cli_commands": [
+    {
+      "command": "search-blogs",
+      "entrypoint": "scripts/search_blogs.py",
+      "description": "Searches and harvests qualified organic Blogspot URLs for a specified niche or service footprint"
+    },
+    {
+      "command": "craft-comment",
+      "entrypoint": "scripts/craft_comment.py",
+      "description": "Scrapes blog post content and generates a natural, high-relevance comment with bold contextual backlink anchor"
+    }
+  ]
+}
